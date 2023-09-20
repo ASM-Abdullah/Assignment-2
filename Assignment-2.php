@@ -1,4 +1,5 @@
 <?php
+
 // Task 1: Looping with Increment using a Function
 /* Write a PHP function that uses a for loop to print all even numbers from 1 to 20, but with a
 step of 2. In other words, you should print 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. The function
@@ -7,7 +8,7 @@ function to print.
 Also do the same using while loop and do-while loop also. */
 
 
-               // Solution of Task-1:
+               /***Solution of Task-1: ***/
 echo "\n\n";
 echo "==> Task-1===>\n(Using For Loop)=====>\n\n";
 
@@ -29,6 +30,8 @@ printAlternateEvenNumbers(1, 20, 2);
 echo "\n\n<br>";
 echo "====> Task-1=>\n(Using While Loop)===>\n\n";
 
+            //Solution of Task-1: (While Loop)
+
 function printAlternateEvenNumbers1(int $start, int $end, int $step){
   $i = $start;
   // If $start is odd, increment it to the next even number
@@ -39,7 +42,7 @@ function printAlternateEvenNumbers1(int $start, int $end, int $step){
     if ($i % 2 == 0) {
       echo $i . " " . "\n";
     }
-    $i += $step * 2; //to skip odd numbers
+    $i += $step * 2; //To skip odd numbers
   }
 }
 
@@ -47,6 +50,8 @@ printAlternateEvenNumbers1(1, 20, 2);
 
 echo "\n\n<br>";
 echo "====> Task-1=>\n(Using Do-while Loop)=>\n\n";
+
+            //Solution of Task-1: (Do-while Loop)
 function printAlternateEvenNumbers2(int $start, int $end, int $step)
 {
   $i = $start;
@@ -57,7 +62,7 @@ function printAlternateEvenNumbers2(int $start, int $end, int $step)
     if ($i % 2 == 0) {
       echo $i . " " . "\n";
     }
-    $i += $step * 2;    // to skip odd numbers
+    $i += $step * 2;    // To skip odd numbers
   } while ($i <= $end);
 }
 
@@ -66,12 +71,15 @@ printAlternateEvenNumbers2(1, 20, 2);
 
 echo "\n\n<br>";
 echo "==> Task-2==>\n\n";
+
+
+
 // Task 2: Skip Multiples of 5
 /* Create a PHP script that prints numbers from 1 to 50 using a for loop. However, when the
 loop encounters a multiple of 5, it should skip that number using the continue statement and
 continue to the next iteration. */
 
-               // Solution of Task-2:
+               /***Solution of Task-2:***/
 for ($i = 1; $i <= 50; $i++) {   // For loop initialized from 1 and continued upto 50.
   if ($i % 5 == 0) {    //IF any number is a multiple of 5, it will be skipped.
     continue;
@@ -82,12 +90,15 @@ for ($i = 1; $i <= 50; $i++) {   // For loop initialized from 1 and continued up
 
 echo "\n\n<br>";
 echo "==> Task-3==>\n\n";
+
+
+
 // Task 3: Break on Condition
 /* Write a PHP program that calculates and prints the first 10 Fibonacci numbers. But, if a
 Fibonacci number is greater than 100, break out of the loop using the break statement.
  */
 
-               // Solution of Task-3:
+            /***Solution of Task-3:***/
 $totalFibonacciNumbers = 10;  //As the first 10 Fibonacci numbers are wanted
 $old = 0;
 $next = 1;
@@ -112,7 +123,7 @@ echo "==> Task-4==>\n\n";
 this 15 as an argument of a function and use a for loop to generate these numbers and print
 them by calling the function. */
 
-               // Solution of Task-4:
+            /***Solution of Task-4:***/
 function fibonacci(int $totalNum = 15)
 {
   $old = 0;
